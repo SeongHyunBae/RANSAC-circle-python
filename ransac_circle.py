@@ -41,10 +41,10 @@ class RANSAC:
 
 		# get three points from data
 		while True:
-			ran = np.random.randint(len(x_data))
+			ran = np.random.randint(len(self.x_data))
 
 			if ran not in save_ran:
-				sample.append((x_data[ran], y_data[ran]))
+				sample.append((self.x_data[ran], self.y_data[ran]))
 				save_ran.append(ran)
 				count += 1
 
